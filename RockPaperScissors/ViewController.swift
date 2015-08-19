@@ -29,7 +29,9 @@ class ViewController: UIViewController {
         return "rock"
     }
     
-    @IBAction func play(playSelection: NSString) {
+    @IBAction func play(sender: UIButton) {
+        var playSelect = sender.titleLabel?.text
+        var playSelection = playSelect!
         var aiPlay = autoPlay()
         var winner = ""
         var status = ""
@@ -72,7 +74,10 @@ class ViewController: UIViewController {
                 winner = "uh oh, dunno"
         }
         
-        
+        var nextController = self.storyboard?.instantiateViewControllerWithIdentifier("ResultController") as! ResultController
+        nextController.status = status
+        nextController.winner = winner
+        self.presentViewController(nextController, animated: true, completion: nil)
     }
 
 
