@@ -28,12 +28,13 @@ class ResultController: UIViewController {
                 self.resultImg?.image = UIImage(named: "PaperCoversRock")
                 statusLabel = "Paper Covers Rock!"
             case "scissors":
-                self.resultImg?.image = UIImage(named: "ScissorsCutPaper")
-                statusLabel = "Scissors Cuts Paper!"
+                self.resultImg?.image = UIImage(named: "scissor")
+                statusLabel = "Scissors Cut Paper!"
             default:
                 statusLabel = "Uh oh no one won"
         }
-        
+        self.result?.text = "Uh no, dunno who won. Try again?"
+
         if(status == "win") {
             self.result?.text = "You won! \(statusLabel)"
         } else if(status == "lose") {
@@ -41,7 +42,7 @@ class ResultController: UIViewController {
         } else if(status == "draw") {
             self.result?.text = "You drew! Try again?"
         } else {
-            self.result?.text = "Uh on, dunno who won. Try again?"
+            self.result?.text = "Uh no, dunno who won. Try again?"
         }
        
         self.resultImg!.alpha = 0
@@ -59,7 +60,6 @@ class ResultController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.resultImg!.alpha = 1
 
     }
     

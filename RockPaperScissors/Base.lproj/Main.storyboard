@@ -32,7 +32,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nEO-fW-pKx"/>
+                                    <action selector="paperSelect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pHD-Z1-1PP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="scissors" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bja-bS-U3u">
@@ -41,7 +41,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gva-Hc-ffs"/>
+                                    <segue destination="b2e-6B-Sgi" kind="presentation" identifier="scissorSelect" id="Rpy-3w-Uw6"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="qW4-Mo-8a4">
@@ -111,6 +111,7 @@
                         <outlet property="paper" destination="ghp-Pk-QAF" id="ogs-lH-6Dn"/>
                         <outlet property="rock" destination="wxa-Cr-Jxe" id="gfc-a2-zlJ"/>
                         <outlet property="scissors" destination="bja-bS-U3u" id="C6a-b5-8lt"/>
+                        <segue destination="b2e-6B-Sgi" kind="presentation" identifier="paperSelection" id="hjn-Po-cWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -170,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5E-jX-kcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="364"/>
+            <point key="canvasLocation" x="1134" y="364"/>
         </scene>
     </scenes>
     <resources>
@@ -178,4 +179,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rpy-3w-Uw6"/>
+    </inferredMetricsTieBreakers>
 </document>
