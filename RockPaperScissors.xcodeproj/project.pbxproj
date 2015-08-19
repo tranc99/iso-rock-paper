@@ -13,6 +13,7 @@
 		10704C4B1B84985700168F86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10704C4A1B84985700168F86 /* Images.xcassets */; };
 		10704C4E1B84985700168F86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10704C4C1B84985700168F86 /* LaunchScreen.xib */; };
 		10704C5A1B84985700168F86 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10704C591B84985700168F86 /* RockPaperScissorsTests.swift */; };
+		10704C641B849FD700168F86 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10704C631B849FD600168F86 /* ResultController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		10704C531B84985700168F86 /* RockPaperScissorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10704C581B84985700168F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10704C591B84985700168F86 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
+		10704C631B849FD600168F86 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				10704C431B84985700168F86 /* AppDelegate.swift */,
 				10704C451B84985700168F86 /* ViewController.swift */,
+				10704C631B849FD600168F86 /* ResultController.swift */,
 				10704C471B84985700168F86 /* Main.storyboard */,
 				10704C4A1B84985700168F86 /* Images.xcassets */,
 				10704C4C1B84985700168F86 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				10704C461B84985700168F86 /* ViewController.swift in Sources */,
 				10704C441B84985700168F86 /* AppDelegate.swift in Sources */,
+				10704C641B849FD700168F86 /* ResultController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
