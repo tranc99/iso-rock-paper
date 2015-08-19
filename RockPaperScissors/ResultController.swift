@@ -32,8 +32,6 @@ class ResultController: UIViewController {
 
         })
         
-        self.resultImg!.alpha = 0
-
     }
     
     override func viewDidLoad() {
@@ -48,4 +46,7 @@ class ResultController: UIViewController {
     }
 
     
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
