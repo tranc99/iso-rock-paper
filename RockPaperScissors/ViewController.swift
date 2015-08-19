@@ -26,7 +26,17 @@ class ViewController: UIViewController {
     }
     
     func autoPlay() -> NSString {
-        return "rock"
+        var selection = "rock"
+        let choose = 1 + arc4random() % 3
+        switch choose {
+            case 1:
+                selection = "rock"
+            case 2:
+                selection = "paper"
+            default:
+                selection = "scissors"
+        }
+        return selection
     }
     
     @IBAction func play(sender: UIButton) {
@@ -36,7 +46,7 @@ class ViewController: UIViewController {
         var winner = ""
         var status = ""
         switch(playSelection) {
-            case "rock":
+            case "Rock":
                 if(aiPlay == "scissors") {
                     winner = "rock"
                     status = "win"
@@ -47,7 +57,7 @@ class ViewController: UIViewController {
                 } else {
                     status = "draw"
                 }
-            case "paper":
+            case "Paper":
                 if(aiPlay == "rock") {
                     winner = "paper"
                     status = "win"
@@ -58,7 +68,7 @@ class ViewController: UIViewController {
                 } else {
                     status = "draw"
                 }
-            case "scissors":
+            case "Scissors":
                 if(aiPlay == "paper") {
                     winner = "scissors"
                     status = "win"

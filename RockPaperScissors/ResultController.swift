@@ -19,8 +19,31 @@ class ResultController: UIViewController {
     var status = ""
     
     override func viewWillAppear(animated: Bool) {
-        self.resultImg?.image = UIImage(named: "PaperCoversRock")
-        self.result?.text = "Paper Won!"
+        var statusLabel = ""
+        switch winner {
+            case "rock":
+                self.resultImg?.image = UIImage(named: "RockCrushesScissors")
+                statusLabel = "Rock Crushes Scissors!"
+            case "paper":
+                self.resultImg?.image = UIImage(named: "PaperCoversRock")
+                statusLabel = "Paper Covers Rock!"
+            case "scissors":
+                self.resultImg?.image = UIImage(named: "ScissorsCutPaper")
+                statusLabel = "Scissors Cuts Paper!"
+            default:
+                statusLabel = "Uh oh no one won"
+        }
+        
+        if(status == "win") {
+            self.result?.text = "You won! \(statusLabel)"
+        } else if(status == "lose") {
+            self.result?.text = "You lost! \(statusLabel)"
+        } else if(status == "draw") {
+            self.result?.text = "You drew! Try again?"
+        } else {
+            self.result?.text = "Uh on, dunno who won. Try again?"
+        }
+       
         self.resultImg!.alpha = 0
 
 
