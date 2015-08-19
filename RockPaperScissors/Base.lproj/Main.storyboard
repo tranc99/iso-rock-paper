@@ -16,52 +16,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxa-Cr-Jxe">
-                                <rect key="frame" x="120" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxa-Cr-Jxe">
+                                <rect key="frame" x="388" y="121" width="46" height="30"/>
                                 <state key="normal" title="Rock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghp-Pk-QAF">
-                                <rect key="frame" x="277" y="285" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghp-Pk-QAF">
+                                <rect key="frame" x="393" y="377" width="41" height="30"/>
                                 <state key="normal" title="Paper">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bja-bS-U3u">
-                                <rect key="frame" x="433" y="285" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bja-bS-U3u">
+                                <rect key="frame" x="140" y="242" width="59" height="30"/>
                                 <state key="normal" title="Scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="qW4-Mo-8a4">
-                                <rect key="frame" x="72" y="153" width="143" height="113"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="qW4-Mo-8a4">
+                                <rect key="frame" x="226" y="79" width="143" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="2aE-ON-ekR"/>
+                                    <constraint firstAttribute="width" constant="143" id="ZhX-BA-gmb"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-oO-8mK">
-                                <rect key="frame" x="229" y="153" width="143" height="113"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-oO-8mK">
+                                <rect key="frame" x="226" y="315" width="143" height="113"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="MQl-Wh-tVc">
-                                <rect key="frame" x="385" y="153" width="143" height="113"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="MQl-Wh-tVc">
+                                <rect key="frame" x="226" y="200" width="143" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="MkP-1h-d4I"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rock, Paper Scissors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWw-In-d5q">
-                                <rect key="frame" x="183" y="47" width="234" height="24"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you beat the AI?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-b4-hfa">
+                                <rect key="frame" x="219" y="483" width="162" height="21"/>
+                                <color key="backgroundColor" red="0.65550366862924891" green="1" blue="0.79816692039475612" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RqB-J8-FOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.20259466719999999" blue="0.74008557799999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Can you beat the AI?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-b4-hfa">
-                                <rect key="frame" x="219" y="409" width="162" height="21"/>
-                                <color key="backgroundColor" red="0.65550366862924891" green="1" blue="0.79816692039475612" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper Scissors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWw-In-d5q">
+                                <rect key="frame" x="180" y="20" width="234" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="DQd-8v-nEM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.20259466719999999" blue="0.74008557799999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cmc-b4-hfa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3eH-OJ-vBk"/>
+                            <constraint firstItem="aYe-oO-8mK" firstAttribute="trailing" secondItem="MQl-Wh-tVc" secondAttribute="trailing" id="596-9k-wc9"/>
+                            <constraint firstItem="qW4-Mo-8a4" firstAttribute="top" secondItem="zWw-In-d5q" secondAttribute="bottom" constant="35" id="9Yp-NR-mjp"/>
+                            <constraint firstItem="wxa-Cr-Jxe" firstAttribute="top" secondItem="zWw-In-d5q" secondAttribute="bottom" constant="77" id="CI4-u7-g5I"/>
+                            <constraint firstItem="wxa-Cr-Jxe" firstAttribute="leading" secondItem="qW4-Mo-8a4" secondAttribute="trailing" constant="19" id="DxT-wr-rA1"/>
+                            <constraint firstItem="MQl-Wh-tVc" firstAttribute="leading" secondItem="bja-bS-U3u" secondAttribute="trailing" constant="27" id="EEf-AJ-uT8"/>
+                            <constraint firstItem="wxa-Cr-Jxe" firstAttribute="trailing" secondItem="ghp-Pk-QAF" secondAttribute="trailing" id="Kav-28-EaW"/>
+                            <constraint firstItem="zWw-In-d5q" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="LzY-Zj-YRJ"/>
+                            <constraint firstItem="zWw-In-d5q" firstAttribute="centerX" secondItem="qW4-Mo-8a4" secondAttribute="centerX" id="M9g-tJ-U9K"/>
+                            <constraint firstItem="ghp-Pk-QAF" firstAttribute="leading" secondItem="aYe-oO-8mK" secondAttribute="trailing" constant="24" id="R10-TP-wpn"/>
+                            <constraint firstItem="MQl-Wh-tVc" firstAttribute="trailing" secondItem="qW4-Mo-8a4" secondAttribute="trailing" id="Rye-tg-5Un"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ghp-Pk-QAF" secondAttribute="bottom" constant="193" id="TUh-Oy-rpb"/>
+                            <constraint firstItem="MQl-Wh-tVc" firstAttribute="leading" secondItem="qW4-Mo-8a4" secondAttribute="leading" id="c95-ji-zqA"/>
+                            <constraint firstItem="aYe-oO-8mK" firstAttribute="top" secondItem="MQl-Wh-tVc" secondAttribute="bottom" constant="2" id="hHu-5S-4eh"/>
+                            <constraint firstItem="aYe-oO-8mK" firstAttribute="leading" secondItem="MQl-Wh-tVc" secondAttribute="leading" id="kM0-3B-Neb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Cmc-b4-hfa" secondAttribute="bottom" constant="96" id="mCs-zg-wok"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bja-bS-U3u" secondAttribute="bottom" constant="328" id="mDP-KO-2Wr"/>
+                            <constraint firstItem="bja-bS-U3u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="140" id="shy-TM-4bz"/>
+                            <constraint firstItem="Cmc-b4-hfa" firstAttribute="top" secondItem="aYe-oO-8mK" secondAttribute="bottom" constant="55" id="tfj-ZI-XTK"/>
+                            <constraint firstItem="MQl-Wh-tVc" firstAttribute="top" secondItem="qW4-Mo-8a4" secondAttribute="bottom" constant="8" symbolic="YES" id="wQo-e3-896"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="paper" destination="ghp-Pk-QAF" id="ogs-lH-6Dn"/>
+                        <outlet property="rock" destination="wxa-Cr-Jxe" id="gfc-a2-zlJ"/>
+                        <outlet property="scissors" destination="bja-bS-U3u" id="C6a-b5-8lt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="336" y="364"/>
+        </scene>
+        <!--Result Controller-->
+        <scene sceneID="kCA-h5-SB3">
+            <objects>
+                <viewController id="b2e-6B-Sgi" customClass="ResultController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xr2-qt-YGp"/>
+                        <viewControllerLayoutGuide type="bottom" id="HcA-2K-Ifz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kah-a5-Moj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1T-sS-miB">
+                                <rect key="frame" x="264" y="369" width="73" height="30"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1PK-kG-WB3">
+                                <rect key="frame" x="180" y="100" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fai-u0-GEM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Lost!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-VE-kEw">
+                                <rect key="frame" x="264" y="272" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1PK-kG-WB3" firstAttribute="centerX" secondItem="Kah-a5-Moj" secondAttribute="centerX" id="97C-dr-gMq"/>
+                            <constraint firstItem="HcA-2K-Ifz" firstAttribute="top" secondItem="Z1T-sS-miB" secondAttribute="bottom" constant="201" id="C92-l7-17e"/>
+                            <constraint firstItem="1PK-kG-WB3" firstAttribute="top" secondItem="Xr2-qt-YGp" secondAttribute="bottom" constant="80" id="F99-V2-ZU6"/>
+                            <constraint firstItem="rqm-VE-kEw" firstAttribute="top" secondItem="1PK-kG-WB3" secondAttribute="bottom" constant="44" id="GDF-9P-8Id"/>
+                            <constraint firstItem="rqm-VE-kEw" firstAttribute="centerX" secondItem="1PK-kG-WB3" secondAttribute="centerX" id="VJO-fT-o30"/>
+                            <constraint firstItem="Z1T-sS-miB" firstAttribute="top" secondItem="rqm-VE-kEw" secondAttribute="bottom" constant="76" id="hqR-bW-Oiy"/>
+                            <constraint firstItem="Z1T-sS-miB" firstAttribute="leading" secondItem="rqm-VE-kEw" secondAttribute="leading" id="vTM-A9-Wrf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="play" destination="Z1T-sS-miB" id="VQy-Xe-PfX"/>
+                        <outlet property="result" destination="rqm-VE-kEw" id="rv1-Z5-RRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5E-jX-kcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="320"/>
         </scene>
     </scenes>
     <resources>

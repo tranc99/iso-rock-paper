@@ -11,6 +11,10 @@ import UIKit
 
 class ResultController: UIViewController {
     
+    @IBOutlet weak var resultImg: UIImage?
+    @IBOutlet weak var result: UILabel?
+    @IBOutlet weak var play: UIButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
